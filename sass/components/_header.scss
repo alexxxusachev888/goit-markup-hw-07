@@ -1,0 +1,79 @@
+.header {
+	padding: 24px 0 25px 0;
+	background-color: $background-color-white;
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	&__logo {
+		font-family: 'Raleway', sans-serif;
+		font-weight: 700;
+		font-size: 26px;
+		line-height: 1.2;
+		color: $black-color;
+
+		span {
+			color: $second-color;
+		}
+	}
+
+	&__logo:hover {
+		color: $black-color;
+	}
+
+	&__navigation-list {
+		display: flex;
+		margin-left: 93px;
+		font-weight: 500;
+		line-height: 1.14;
+		letter-spacing: 0.02em;
+	}
+
+	&__navigation-list li:not(:last-child) {
+		position: relative;
+		margin-right: 50px;
+	}
+
+	&__contacts {
+		display: flex;
+		align-items: center;
+		margin-left: auto;
+	}
+
+	&__contacts-item {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+	}
+
+	&__contacts &__contacts-item:not(:last-child) {
+		margin-right: 50px;
+	}
+
+	&__link-contacts:hover+&__icon-phone,
+	&__link-contacts:focus+&__icon-phone,
+	&__link-contacts:hover+&__icon-envelope,
+	&__link-contacts:focus+&__icon-envelope {
+		fill: $second-color;
+	}
+
+	&__link-contacts {
+		margin-left: 10px;
+	}
+
+	&__icon-envelope {
+		width: 10px;
+		height: 16px;
+		fill: currentColor;
+		cursor: pointer;
+	}
+
+	&__icon-phone {
+		width: 16px;
+		height: 12px;
+		fill: currentColor;
+		cursor: pointer;
+	}
+}

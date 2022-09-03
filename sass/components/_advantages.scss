@@ -1,0 +1,40 @@
+.advantages {
+    font-size: 0;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 270px;
+    }
+
+    &__subtitle {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.14;
+        text-transform: uppercase;
+    }
+
+    &__descr {
+        padding-top: 10px;
+        font-size: 14px;
+        line-height: 1.71;
+        color: $third-color;
+    }
+
+    &__wrapper {
+        margin-bottom: 30px;
+        padding: 25px 101px;
+        background-color: $background-color2;
+        border-radius: 4px;
+    }
+
+    &__icon {
+        display: block;
+        margin: 0 auto;
+        width: 70px;
+        height: 70px;
+    }
+}
