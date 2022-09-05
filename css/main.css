@@ -438,8 +438,8 @@ p {
   margin-left: -30px;
 }
 .works__item {
-  -ms-flex-preferred-size: calc(100% - 60px)/3;
-      flex-basis: calc(100% - 60px)/3;
+  -ms-flex-preferred-size: 360px;
+      flex-basis: 360px;
   margin-top: 30px;
   margin-left: 30px;
   border: 1px solid #eeeeee;
@@ -457,12 +457,8 @@ p {
 }
 .works__wrapper {
   position: relative;
-  width: 370px;
   height: 294px;
   overflow: hidden;
-}
-.works__item img {
-  width: 100%;
 }
 .works h2 {
   margin-bottom: 4px;
@@ -477,7 +473,7 @@ p {
   line-height: 1.87;
   color: #757575;
 }
-.works__item:hover .works-overlay {
+.works__item:hover .works__overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -498,7 +494,6 @@ p {
 }
 .works__overlay p {
   display: inline-block;
-  width: 100%;
   font-size: 18px;
   color: #ffffff;
 }
@@ -700,10 +695,10 @@ p {
   border-radius: 4px;
   outline: none;
 }
-.modal__name :focus {
+.modal__name:focus {
   border: 1px solid #2196f3;
 }
-.modal__name:focus + .modal-icon {
+.modal__name:focus + .modal__icon {
   fill: #2196f3;
 }
 .modal__name.comment {
